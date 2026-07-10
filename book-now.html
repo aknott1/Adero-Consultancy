@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now — Adero Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="brand">
+      <svg class="arch-icon" viewBox="0 0 28 32" width="26" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path d="M2 30V14C2 7.373 7.373 2 14 2C20.627 2 26 7.373 26 14V30" stroke="#16233D" stroke-width="2.4"/>
+        <path d="M8 30V15C8 11.686 10.686 9 14 9C17.314 9 20 11.686 20 15V30" stroke="#D89A34" stroke-width="2.4"/>
+      </svg>
+      <span class="brand-text">Adero<span class="sub">Consultancy</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accessibility-workshops.html">Workshops</a>
+      <a href="public-speaking.html">Speaking</a>
+      <a href="clients.html">Clients</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+    <a href="book-now.html" class="btn btn-primary nav-cta">Book Now</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Book Now</span>
+      <h1>Let's find your date.</h1>
+      <p>Tell us about your school and what you're picturing — a workshop, a keynote, or something in between. We'll follow up within a couple of business days.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid-2">
+      <div class="reveal">
+        <p id="form-instructions" style="font-size:0.9rem; color:var(--charcoal-soft);">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span> are required.</p>
+        <form id="booking-form" novalidate aria-describedby="form-instructions">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Your name <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="org">School / Organization <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input type="text" id="org" name="org" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="type">Request type <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <select id="type" name="type" required aria-required="true">
+                <option value="Accessibility Workshop">Accessibility Workshop</option>
+                <option value="Public Speaking / Keynote">Public Speaking / Keynote</option>
+                <option value="Multi-week Residency">Multi-week Residency</option>
+                <option value="Other">Other / Not sure yet</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="dates">Preferred date(s)</label>
+              <input type="text" id="dates" name="dates" placeholder="e.g. Late October, or a specific week">
+            </div>
+            <div class="field full">
+              <label for="message">Tell us about your students</label>
+              <textarea id="message" name="message" placeholder="Grade level, group size, and anything else that helps us prepare."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Request</button>
+          <p id="form-confirmation" role="status" aria-live="polite" hidden style="margin-top:16px; color:var(--ink); font-weight:600;">Your email client should be opening now — thank you for reaching out, we'll be in touch soon.</p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div class="card">
+          <h3>Prefer to reach out directly?</h3>
+          <p>Email <a href="mailto:hello@aderoconsultancy.com" style="text-decoration:underline;">hello@aderoconsultancy.com</a> and we'll take it from there.</p>
+          <p>Adero Consultancy is based in Chicago, Illinois, and works with private and public schools locally and beyond, in person or virtually.</p>
+        </div>
+        <div class="card" style="margin-top:20px;">
+          <h3>What happens next</h3>
+          <p>We'll reply within a couple of business days to confirm scope, format, and scheduling — then lock in a date that works for your calendar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-text" style="color:var(--cloud); font-family:var(--display); font-size:1.2rem;">Adero Consultancy</div>
+        <p>Accessibility workshops and keynotes that help schools build environments where every student belongs.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="accessibility-workshops.html">Accessibility Workshops</a>
+        <a href="public-speaking.html">Public Speaking</a>
+        <a href="clients.html">Clients</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:hello@aderoconsultancy.com">hello@aderoconsultancy.com</a>
+        <a href="book-now.html">Book a workshop</a>
+        <p>Chicago, Illinois</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Adero Consultancy. All rights reserved.</span>
+      <span>Belonging starts now.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
